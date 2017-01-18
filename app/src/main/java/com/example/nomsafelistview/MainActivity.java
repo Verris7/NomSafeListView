@@ -25,8 +25,7 @@ public class MainActivity extends Activity {
         mAllergensList = new ArrayList();
         //Add sample data for list
         //We can get data from db, webservice here
-        mAllergensList.add(new Allergen(1,"Peanuts","Seafood"));
-        mAllergensList.add(new Allergen(3,"Seafood","Dairy"));
+        mAllergensList.add(new Allergen("Peanuts"));
 
         //Init adapter
         adapter = new AllergenListAdapter(getApplicationContext(), mAllergensList);
